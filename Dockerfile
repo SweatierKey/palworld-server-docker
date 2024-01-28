@@ -32,6 +32,7 @@ ENV PORT= \
     SERVER_DESCRIPTION=
 
 COPY ./scripts/* /home/steam/server/
+COPY ./savefile/* /palworld/Pal/Saved/SaveGames/0/
 RUN chmod +x /home/steam/server/init.sh /home/steam/server/start.sh /home/steam/server/backup.sh && \
     mv /home/steam/server/backup.sh /usr/local/bin/backup
 
